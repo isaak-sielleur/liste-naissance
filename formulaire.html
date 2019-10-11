@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="liste.css">
+		<link rel="icon" type="png" href="Imagesliste/iconform.png">
+		<title>Formulaire</title>
+	</head>
+
+	<body>
+
+		<h1 class="ombre">Votre participation</h1>
+
+			<form  class="body" method="post" action="form.php" class="placeholder">
+
+				<div>
+					<label for="pass">Dites nous ce que vous voulez prendre :</label>
+					<select name="select">
+  						<option>La poussette</option>
+  						<option>Des body</option>
+  						<option>Des doudous</option>
+  						<option>Un hochet</option>
+  						<option>Une trousse de soins</option>
+  						<option>Le lit</option>
+  						<option>Un siège auto</option>
+  						<option>Un porte bébé</option>
+  						<option>Les biberons</option>
+  						<option>Le chauffe biberon</option>
+  						<option>Des tétines</option>
+					</select>
+				</div>
+			<br/>
+				<div>
+					<textarea name="textarea">Qui est tu ? (que nous puissions te remercier)</textarea>
+				</div>
+			<br/>
+				<div>
+					<textarea name="textarea">Voulez vous nous dire quelque chose ?</textarea>
+				</div>
+					
+				<div class="box">
+					<a class="button" href="#popup1">Envoyer ma participation</a>
+				</div>
+
+				<div id="popup1" class="overlay">
+					<div class="popup">
+						<h2>Tout a bien été pris en compte</h2>
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							Merci a vous pour l'aide que vous avez apportés, ce que vous avez choisis de prendre aidera notre petit bout à bien commencer dans la vie.
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+	</body>
+
+</html>

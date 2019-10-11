@@ -1,0 +1,229 @@
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body {
+	background-image: linear-gradient(to right, #e09cc2, #dc9cc9, #d69dd0, #cf9ed7, #c69fde, #b8a8ea, #a7b1f3, #96b9f9, #81c9fd, #78d6f9, #80e2f0, #95ebe5);
+	font-family: 'grand hotel';
+	font-size: 160%;
+}
+
+.body {
+	border-style: solid;
+	margin-top: 10px;
+	border-radius: 40px;
+	text-align: center;
+}
+
+td
+{
+    border: 1px solid black;
+    width: 25%;
+}
+
+th {
+	width: 25%;
+	border: 1px solid black;
+	margin-top: 30px;
+	padding: 30px;
+	font-size: 130%;
+}
+
+tr {
+	text-align: center;
+}
+
+.urgent:hover {
+	background-image: linear-gradient(to left, #990202, #aa221c, #bb3832, #ca4c49, #d95f5f);
+}
+
+.pris:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+	font-family: 'Grenze';
+ 	font-size: 60px;
+	padding: 80px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	-webkit-animation-name: fadeInDown;
+ 	animation-name: fadeInDown;
+  	-webkit-animation-duration: 1s;
+  	animation-duration: 4s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+}
+
+  @-webkit-keyframes fadeInDown {
+  40% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+
+a {
+	font-family: 'Yeseva one';
+	font-size: 110%;
+}
+
+.categorie {
+	font-family: 'cookie';
+	font-size: 140%;
+	background-image: linear-gradient(to right, #4ecaf0, #4ec2f2, #53baf3, #5db2f2, #69a9ef, #69a1ec, #6b99e8, #6e91e3, #6589df, #5b81db, #5179d7, #4771d3);
+}
+  
+.p {
+	font-family: 'Satisfy';
+	font-size: 120%;
+	text-align: center;
+}
+
+ .ombre {
+    color: #131313;
+    border-radius: 220px;
+    border-style: solid;
+    letter-spacing: .15em;
+    text-shadow:  1px -1px 0 #767676, 
+      -1px 2px 1px #f18b38, 
+      -2px 4px 1px #ff7b55, 
+      -3px 6px 1px #ff6e75, 
+      -4px 8px 1px #ff6898, 
+      -5px 10px 1px #ff6bbb, 
+      -6px 12px 1px #ea72ce, 
+      -7px 14px 1px #d17add, 
+      -8px 16px 1px #b382e8, 
+      -9px 18px 1px #9184e1, 
+      -10px 20px 1px #7284d5, 
+      -11px 22px 1px #5982c6, 
+      -12px 24px 1px #487eb3;
+  }
+
+.haut {
+	background-image: linear-gradient(to right, #f18b38, #ff7b55, #ff6e75, #ff6898, #ff6bbb, #ea72ce, #d17add, #b382e8, #9184e1, #7284d5, #5982c6, #487eb3);
+}
+
+.quoi {
+	font-family: georgia;
+
+}
+
+select {
+	border-radius: 10px;
+}
+
+textarea {
+	border-radius: 10px;
+	text-align: center;
+	width: 50%;
+	height: 50px;
+}
+
+
+
+.box {
+  width: 30%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/70px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 0.7em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px/70px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: linear-gradient(to right bottom, #051937, #46255a, #8f2162, #cd2c4b, #eb6112);
+  opacity: 0.55;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 100%;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
